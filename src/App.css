@@ -1,0 +1,97 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;
+  background: rgb(184, 181, 181);
+  background: linear-gradient(
+  90deg,
+  rgba(184, 181, 181, 1) 0%,
+  rgba(255, 255, 255, 1) 100%
+  );
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  margin-top: 1rem;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  justify-content: center;
+  border-radius: 30px;
+  grid-template-columns: repeat(4, 3.5rem);
+  grid-template-rows: minmax(5rem,auto) repeat(5, 3.5rem);
+  gap: 10px;
+  background-color: black;
+  width: 25vw;
+  height: 90vh;
+}
+
+.grid > button:hover,:focus {
+  background-color: #f1f1f1;
+  color: black;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: .4s;
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.output {
+  grid-column: 1 / -1;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: .5rem;
+  word-break: break-word;
+  word-wrap: break-all;
+  color: white;
+}
+
+button {
+  font-size: 1.5rem;
+  border-radius:50px;
+  border: none;
+  background-color: #505050;
+  color: white;
+}
+
+.yellow {
+  background-color: #FFC300;
+  color: white;
+  font-size: 2rem;
+}
+
+.gray {
+  background-color: #7e7e7a;
+}
+
+.red {
+  background-color: #FF0000;
+}
+
+.output .prev {
+  opacity: 0.5;
+  font-size: 1.5rem;
+}
+
+.output .curr {
+  font-size: 2.5rem;
+  opacity: 1;
+}
+
+/* gray : 505050*/
+/* black : 1C1C1C*/
+/* lightgray : D4D4D2*/
