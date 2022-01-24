@@ -2,6 +2,12 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: myFirstFont;
+  src: url(Calculator.ttf);
+}
+
+
 body {
   margin: 0;
   padding: 0;
@@ -22,7 +28,7 @@ body {
 
 .grid {
   display: grid;
-  margin-top: 1rem;
+  margin-top: 5vh;
   padding-bottom: 30px;
   padding-top: 30px;
   justify-content: center;
@@ -31,7 +37,7 @@ body {
   grid-template-rows: minmax(5rem,auto) repeat(5, 3.5rem);
   gap: 10px;
   background-color: black;
-  width: 25vw;
+  width: 23vw;
   height: 90vh;
 }
 
@@ -49,7 +55,7 @@ body {
 
 .output {
   grid-column: 1 / -1;
-  background-color: gray;
+  background-color: #6d8635;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -57,7 +63,12 @@ body {
   padding: .5rem;
   word-break: break-word;
   word-wrap: break-all;
-  color: white;
+  color: black;
+  font-family: myFirstFont;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border-radius: 5px;
 }
 
 button {
@@ -69,9 +80,13 @@ button {
 }
 
 .yellow {
-  background-color: #FFC300;
+  background-color: #FF9500;
   color: white;
   font-size: 2rem;
+}
+
+.yellow:hover {
+  font-size: 2.2rem;
 }
 
 .gray {
@@ -82,13 +97,17 @@ button {
   background-color: #FF0000;
 }
 
+.red:hover {
+  font-weight: 700;
+}
+
 .output .prev {
-  opacity: 0.5;
-  font-size: 1.5rem;
+  opacity: 0.8;
+  font-size: 2rem;
 }
 
 .output .curr {
-  font-size: 2.5rem;
+  font-size: 3rem;
   opacity: 1;
 }
 
