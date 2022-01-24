@@ -1,6 +1,6 @@
 # This is a retro styled iphonic calculator
 ---
-[ LIVE  Demo](https://dazzling-leakey-4426d7.netlify.app/)
+[ LIVE  Demo](https://quizzical-gates-14d061.netlify.app/)
 
 ## Below you will see the page of an app
 
